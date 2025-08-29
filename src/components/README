@@ -1,0 +1,8 @@
+Structure of Browse Page
+Two section:
+-> MainContainer
+    ->Video Playing 
+    ->Video description
+-> SecondaryContainer
+    ->MoviesList
+    ->Movies Cards

@@ -1,15 +1,14 @@
-// import React, { useState } from 'react';
-
-
+import useNowPlayingMovies from '../hooks/useNowPlayingMovies';
+import MainContainer from './MainContainer';
+import SecondaryContainer from './SecondaryContainer';
 const Browse = () => {
-   
-
+    useNowPlayingMovies();
     return (
-        <div className="py-16">
-
-            <h1>Browse : user: </h1>
+        <div className="">
+            <MainContainer/>
+            <SecondaryContainer/>
         </div>
     )
-}
+};
 
 export default Browse;
