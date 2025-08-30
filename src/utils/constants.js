@@ -11,3 +11,12 @@ export const API_OPTIONS = {
     }
 
 }
+
+export const MOVIES_POSTER = "https://image.tmdb.org/t/p/w500";
+
+
+export const SUPPORTED_LANGUAGES=[
+    { identifier: "en", label: "English" },
+    { identifier: "spanish", label: "Spanish" },
+    { identifier: "hindi", label: "Hindi" }
+]

@@ -14,12 +14,10 @@ const AuthStateObserver = () => {
     useEffect(() => {
       const unsubscribe = onAuthStateChanged(auth, (user) => {
             if (user) {
-                console.log("Auth state changed: User detected", user.email);
                 const { uid, email, displayName } = user;
                 dispatch(addUser({ uid, email, displayName }));
                 navigate('/browse');
             } else {
-                console.log("Auth state changed: No user detected");
                 dispatch(removeUser());
                 navigate('/');
             }

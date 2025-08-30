@@ -17,7 +17,6 @@ const Login = () => {
     const dispatch = useDispatch();
 
     const handleSignup = () => {
-        console.log("clicked")
         setIsSignIn(!isSignIn);
     }
 
@@ -34,12 +33,9 @@ const Login = () => {
             const errMsg = checkValidateData(emailRef.current.value, passwordRef.current.value);
             setErrMsg(errMsg);
             if (Object.keys(errMsg).length === 0) {
-                console.log("Attempting to sign in with:", emailRef.current.value);
                 signInWithEmailAndPassword(auth, emailRef.current.value, passwordRef.current.value)
                     .then((userCredential) => {
                         const user = userCredential.user;
-                        console.log("Sign in successful for:", user.email);
-                        // Don't navigate here - AuthStateObserver will handle it
                     })
                     .catch((error) => {
                         console.error("Sign in error:", error.code, error.message);

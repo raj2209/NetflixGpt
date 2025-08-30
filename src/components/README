@@ -5,4 +5,8 @@ Two section:
     ->Video description
 -> SecondaryContainer
     ->MoviesList
+        -->Popular
+        -->Trending 
+        -->NowPlaying
+        -->Genre
     ->Movies Cards
